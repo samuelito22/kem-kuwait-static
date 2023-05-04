@@ -1,0 +1,56 @@
+// _variables.scss
+
+// root
+
+:root {
+  --max-content-container: 1280px;
+}
+
+// color declarations
+
+// light theme
+
+$white-bg: #ffffff;
+$gray-lighter-bg: #f7f7fa;
+$gray-light-divider: #d3d3dd;
+$gray-dark: #ababbb;
+$gray-darker: #4f4f5f;
+$black: #1c1c1c;
+
+// dark theme
+
+$dark-bg: #05041b;
+$gray-darker-bg: #232236;
+$gray-dark-divider: #464556;
+$gray-light: #696876;
+$gray-lighter: #a5a5ae;
+$white: #eeeef2;
+
+//  primary color
+
+$primary-darker: #1c7e49;
+$primary-dark: #2ea464;
+$primary-default: #3ccb7e;
+$primary-light: #8ce7a6;
+$primary-lighter: #d1f5db;
+
+// secondary color
+
+$pink: #aa2ae6;
+$pink-light: #cf7ef4;
+$pink-lighter: #edc6ff;
+
+//  colors with effects
+
+$effects-white-80: rgba(255, 255, 255, 0.8);
+$effects-black-80: rgba(5, 4, 27, 0.8);
+$effects-black-40: rgba(5, 4, 27, 0.4);
+
+// additional colors
+
+$purple: #7a5af8;
+$blue: #2970ff;
+$green-success: #33cc67;
+$red: #d90000;
+$yellow: #fab20b;
+$yellow-light: F5D949;

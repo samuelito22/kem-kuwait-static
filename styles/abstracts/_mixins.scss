@@ -1,0 +1,146 @@
+// _mixins.scss
+
+// typography mixins
+
+// title
+
+@mixin title-01() {
+  font-weight: 500;
+  font-size: 76px;
+  line-height: 118%;
+  letter-spacing: -0.02em;
+}
+
+@mixin title-02() {
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 113%;
+}
+
+@mixin title-03() {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 117%;
+  letter-spacing: -0.02em;
+}
+
+@mixin title-04() {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 125%;
+}
+
+@mixin title-05() {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+}
+
+// headline
+
+@mixin headline-01() {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0.0128571em;
+}
+
+@mixin headline-02() {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0.0128571em;
+}
+
+@mixin headline-03() {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 122%;
+  letter-spacing: 0.0128571em;
+}
+
+@mixin headline-04() {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 122%;
+  letter-spacing: 0.0128571em;
+}
+
+@mixin headline-05() {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.0128571em;
+}
+
+// body
+
+@mixin body-01() {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+}
+
+@mixin body-02() {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 138%;
+}
+
+@mixin body-03() {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+}
+
+//  subhead
+
+@mixin subhead-01() {
+  font-family: "SF Pro Display", -apple-system, system-ui, BlinkMacSystemFont,
+    sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc((17 / 14) * 100%);
+}
+
+@mixin subhead-02() {
+  font-family: "SF Pro Display", -apple-system, system-ui, BlinkMacSystemFont,
+    sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc((17 / 14) * 100%);
+}
+
+@mixin subhead-03() {
+  font-family: "SF Pro Display", -apple-system, system-ui, BlinkMacSystemFont,
+    sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+}
+
+// footnote
+
+@mixin footnote-01() {
+  font-family: "SF Pro Display", -apple-system, system-ui, BlinkMacSystemFont,
+    sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc((14 / 12) * 100%);
+}
+
+@mixin footnote-02() {
+  font-family: "SF Pro Display", -apple-system, system-ui, BlinkMacSystemFont,
+    sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc((14 / 12) * 100%);
+}
+
+@mixin footnote-03() {
+  font-family: "SF Pro Display", -apple-system, system-ui, BlinkMacSystemFont,
+    sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 167%;
+}

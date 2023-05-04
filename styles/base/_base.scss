@@ -1,0 +1,87 @@
+*,
+*::before,
+*::after {
+  // targets all elements and their pseudo elements
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  // theme specific rules
+  // background: $white-BG;
+  // color: $color-gray-iron-900;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased;
+  text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  overflow-x: hidden;
+  min-width: 320px;
+  &.light {
+    // light theme
+    background: $white-bg;
+    color: $black;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+input,
+button,
+textarea,
+select {
+  color: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  white-space: nowrap;
+  font-size: inherit;
+  outline: none;
+  appearance: none;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+  // vertical-align: top;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}

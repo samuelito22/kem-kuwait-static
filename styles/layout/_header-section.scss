@@ -1,0 +1,296 @@
+// _header-section.scss
+
+.header {
+  // display: flex;
+  // align-items: center;
+  height: 110px;
+  width: 100%;
+  position: fixed;
+  z-index: 110;
+  // background-color: $white-BG; theme dependent color
+  box-shadow: none; // may be changed later
+  transition: none; // shall be changed later as animations are added
+  padding: 32px 0px 24px;
+  &__container {
+    height: 100%;
+  }
+  &__logo {
+    display: block;
+    max-width: 62px;
+    span {
+      font-family: "SF Pro Display"; //helveticaneuecyr needs to be downloaded and loaded as a fallback - or put an svg instead if SF Pro displat not available
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 48px;
+      letter-spacing: -0.03em;
+      color: $black;
+    }
+    &-container {
+      z-index: 110;
+    }
+  }
+
+  &__nav {
+    height: 100%;
+    &-list {
+      .nav-list__item {
+        &-link {
+          //so far links are defined in _link.scss in components directory
+        }
+      }
+    }
+  }
+  &__button-group {
+    .button-signup {
+      @include body-02;
+      padding: 16px 24px;
+    }
+    .button-group {
+      &__language-menu {
+        position: relative;
+        &.active {
+          .button-group {
+            &__language-toggle {
+              &:after {
+                // background-image: url("../../assets/icons/chevron-up.svg");
+                transform: translateY(-50%) rotateZ(180deg); // not cross-browser compatible // say like if transform not supported, background-image changes instead of rotating?
+              }
+            }
+          }
+        }
+      }
+      &__language-list {
+        display: none;
+
+        padding: 12px 0px;
+        border-radius: 4px; // not cross-browser compatible
+        position: absolute;
+        bottom: -6px;
+        left: 100%;
+        transform: translate(-50%, 100%); // not cross-browser compatible
+        background-color: $white-bg;
+        box-shadow: none; // may be changed later
+        &__item {
+          padding: 10px 25px;
+          .link {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 111%;
+            color: #727285;
+            &.active {
+              color: $primary-default;
+            }
+          }
+        }
+        &-mobile {
+          display: none !important; // before media queries added below
+        }
+      }
+      &__language-toggle {
+        margin: 0px 42px 0px 14px;
+        position: relative;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 111%;
+        color: #727285;
+        &:after {
+          content: "";
+          width: 20px;
+          height: 20px;
+          position: absolute;
+          top: 50%;
+          right: -28px;
+          transform: translateY(-50%); // not cross-browser compatible
+          background-image: url("../../assets/icons/chevron-down.svg");
+          background-size: contain;
+          background-repeat: no-repeat;
+          //   transition: transform 200ms ease-in-out;
+        }
+      }
+    }
+  }
+  &__toggle-menu {
+    display: none;
+    z-index: 110;
+    width: 30px;
+    height: 30px;
+    background-image: url("../../assets/icons/burger-menu-icon.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 0.175s ease-in-out; // not cross-browser compatible
+  }
+}
+.no-flexbox .header,
+.no-js:not(.no-flexbox) .header {
+  .header {
+    &__container {
+    }
+    &__logo-container {
+      max-width: 62px;
+      float: left;
+    }
+    &__toggle-menu {
+      float: right;
+    }
+  }
+}
+.flexbox .header {
+  display: flex;
+  align-items: center;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__logo {
+    &-container {
+      flex: 1 1 62px;
+    }
+  }
+  &__menu {
+    display: flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    &-list {
+      display: flex;
+      gap: 40px; //not cross-browser compatible
+    }
+  }
+  &__button-group {
+    display: flex;
+    align-items: center;
+    gap: 12px; //not cross-browser compatible
+
+    .button-group {
+      &__language-menu {
+        &.active {
+          .button-group {
+            &__language-list {
+              display: flex;
+              box-shadow: 0px 5px 10px#72728543; //not cross-browser compatible
+            }
+          }
+        }
+      }
+      &__language-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px; //not cross-browser compatible
+      }
+    }
+  }
+}
+
+.light {
+  .header {
+    // background-color: $white-bg;  //has to remain transparent?? to see the particles
+    .header__nav {
+      background-color: $white-bg;
+      border-radius: 40px;
+      padding: 16px 24px;
+    }
+  }
+}
+//notes for header-section
+//  add flex compatibility
+@media only screen and (max-width: 993px) {
+  .header {
+    height: 96px;
+    // border-bottom: 0.5px solid $gray-light-divider; // smaller resolution
+    &__menu {
+      padding-top: 160px;
+      position: absolute;
+      transform: translate(-50%, 200%); //not cross-browser compatible
+      background-color: $white-bg; // theme dependent
+      transition: transform 200ms ease-in-out; //not cross-browser compatible
+      top: 0px;
+      left: 50%;
+      width: 100vw;
+      height: calc(100vh); //not cross-browser compatible
+    }
+    &__nav {
+      height: auto !important;
+    }
+    &__toggle-menu {
+      display: block;
+    }
+    &__button-group {
+      .button-group {
+        &__language-toggle {
+          display: none;
+        }
+        &__language-list-mobile {
+          position: relative;
+          left: auto;
+          bottom: auto;
+          transform: none;
+          background-color: transparent;
+        }
+      }
+      .button-signup {
+        width: 100%;
+        max-width: 320px;
+        margin: 0px 20px;
+      }
+    }
+    &.show-mobile-menu {
+      .header {
+        &__menu {
+          transform: translate(-50%, 0%); //not cross-browser compatible
+        }
+
+        &__toggle-menu {
+          background-image: url("../../assets/icons/cross-icon.svg");
+        }
+      }
+    }
+  }
+  .flexbox {
+    .header {
+      &__menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 30px; //not cross-browser compatible
+      }
+      &__nav {
+        &-list {
+          flex-direction: column;
+        }
+      }
+
+      &__button-group {
+        flex-direction: column;
+        .button-group {
+          &__language-list-mobile {
+            display: flex !important;
+            flex-direction: row;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .header {
+    border-bottom: 0.5px solid $gray-light-divider; // smaller resolution
+    &__menu {
+      top: 96px;
+      height: calc(100vh - 97px); //not cross-browser compatible
+    }
+  }
+  .light .header {
+    background-color: $white-bg;
+  }
+}

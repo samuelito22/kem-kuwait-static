@@ -1,0 +1,302 @@
+
+.app-page .use-it-to-send {
+    height: 100vh;
+    min-height: 580px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    background-color: rgba(241, 255, 245, 1);
+}
+
+.app-page .use-it-to-send h1{
+    color: rgba(60, 203, 126, 1);
+    text-align: center;
+    font-weight: 500;
+    font-size: 7.5rem;
+    letter-spacing: -2%;
+    line-height: 7.5rem;
+    z-index: 1;
+    margin: 0 10px;
+}
+
+@media only screen and (max-width: 620px) {
+    .app-page .use-it-to-send h1{
+        color: rgba(60, 203, 126, 1);
+        text-align: center;
+        font-weight: 500;
+        font-size: 2rem;
+        letter-spacing: -2%;
+        line-height: 120px;
+        z-index: 1;
+        margin: 0 10px;
+    }
+}
+
+.app-page .use-it-to-receive {
+    height: 100vh;
+    position: relative;
+  min-height: 580px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F4F0FE;
+}
+
+.app-page .use-it-to-receive h1{
+    color: #7A5AF8;
+    text-align: center;
+    font-weight: 500;
+    font-size: 7.5rem;
+    letter-spacing: -2%;
+    line-height: 7.5rem;
+    z-index: 1;
+    margin: 0 10px;
+}
+
+@media only screen and (max-width: 620px) {
+    .app-page .use-it-to-receive h1{
+        color: #7A5AF8;
+        text-align: center;
+        font-weight: 500;
+        font-size: 2rem;
+        letter-spacing: -2%;
+        line-height: 120px;
+        z-index: 1;
+        margin: 0 10px;
+    }
+}
+
+.app-page .easy-easier-easiest {
+    height: 100vh;
+    position: relative;
+  min-height: 580px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F0FBFE;
+}
+
+.app-page .easy-easier-easiest h1{
+    color: #2970FF;
+    text-align: center;
+    font-weight: 500;
+    font-size: 7.5rem;
+    letter-spacing: -2%;
+    line-height: 7.5rem;
+    z-index: 1;
+    margin: 0 10px;
+}
+
+@media only screen and (max-width: 620px) {
+    .app-page .easy-easier-easiest h1{
+        color: #2970FF;
+        text-align: center;
+        font-weight: 500;
+        font-size: 2rem;
+        letter-spacing: -2%;
+        line-height: 120px;
+        z-index: 1;
+        margin: 0 10px;
+    }
+}
+
+.app-page .container-send-to-multiple-people{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 20px;
+}
+
+.app-page .container-send-to-multiple-people img{
+    width: 352px;
+}
+
+.app-page .container-send-to-multiple-people .outlined{
+    display: block;
+    -webkit-text-stroke: 1.5px #3CCB7E;
+    color: transparent;
+}
+.app-page .container-send-to-multiple-people h1{
+    font-size: 2.6rem;
+    font-weight: 500;
+    color: #3CCB7E;
+    line-height: 5rem;
+}
+
+.app-page .container-send-to-multiple-people{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 20px;
+}
+
+.app-page .container-send-to-multiple-people img{
+    width: 352px;
+}
+
+.app-page .container-send-to-multiple-people .outlined{
+    display: block;
+    -webkit-text-stroke: 1.5px #3CCB7E;
+    color: transparent;
+}
+.app-page .container-send-to-multiple-people h1{
+    font-size: 2.6rem;
+    font-weight: 500;
+    color: #3CCB7E;
+    line-height: 4rem;
+}
+
+/**/
+.app-page .container-make-a-request-to-anyone{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+  }
+  
+  .app-page .container-make-a-request-to-anyone img{
+      width: 352px;
+  }
+  
+  .app-page .container-make-a-request-to-anyone .content{
+    width: 332.5px;
+  }
+  
+  .app-page .container-make-a-request-to-anyone h1{
+      font-size: 2.6rem;
+      font-weight: 500;
+      color: rgba(122, 90, 248, 1);
+  }
+  .app-page .container-make-a-request-to-anyone p{
+    font-size: 1.05rem;
+    font-weight: 400;
+    color: rgba(79, 79, 95, 1);
+    line-height: 2rem;
+}
+@media only screen and (max-width: 1000px) {
+    .app-page .container-send-to-multiple-people h1{
+        font-size: 2.0rem;
+        line-height: 3.2rem;
+    }
+    .app-page .container-send-to-multiple-people img{
+        width: 270px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .app-page .container-send-to-multiple-people h1{
+        font-size: 1.69rem;
+        line-height: 3rem;
+    }
+    .app-page .container-send-to-multiple-people img{
+        width: 228.8px;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .app-page .container-send-to-multiple-people{
+        flex-direction: column;
+    }
+    .app-page .container-make-a-request-to-anyone{
+        flex-direction: column;
+      }
+      
+
+    .app-page .container-send-to-multiple-people img{
+        width: 95%;
+        height: unset;
+    }
+    
+}
+
+
+
+.app-page .download-the-app-to-get-started{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+  
+  }
+  
+  .app-page .download-the-app-to-get-started .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    background: rgba(60, 203, 126, 1);
+    mix-blend-mode: hue;
+  }
+  
+  .app-page .download-the-app-to-get-started video{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -2;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+  }
+  
+  .app-page .download-the-app-to-get-started .container{
+    width: 731px;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .app-page .download-the-app-to-get-started .container h1{
+    color:#3CCB7E;
+    font-size: 2.5rem;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .app-page .download-the-app-to-get-started .container p{
+    font-size: 0.8rem;
+    color: #4F4F5F ;
+    text-align: center;
+    margin-bottom: 30px;
+    max-width: 450px;
+  }
+  
+  .app-page .download-the-app-to-get-started .container .inputField{
+    height: 50.6px;
+    width: 307.2px;
+    border-radius: 24px;
+    background-color: rgba(249, 250, 251, 0.24);
+    display: flex;
+  }
+  
+  .app-page .download-the-app-to-get-started .container .inputField input{
+    height: 100%;
+    width: 100%;
+    border: 0px;
+    color: white;
+    padding: 0 10px 0 20px;
+    background: transparent;
+    font-size: 0.8rem;
+  }
+  .app-page .download-the-app-to-get-started .container .inputField input::placeholder{
+    color: white;
+    font-size: 0.8rem;
+  }
+  

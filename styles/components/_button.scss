@@ -1,0 +1,31 @@
+// _button.scss
+
+// .no-flexbox .button {
+//   & > * {
+// float: left;
+// width: 33.3333%;
+// box-sizing: border-box;
+// padding: 10px;
+// vertical-align: middle;
+//   }
+// }
+
+.flexbox .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  border-radius: 20px;
+  &__primary {
+    background-color: $primary-default;
+    border: none;
+    color: $white-bg;
+  }
+  &__secondary {
+    background-color: #ffffff91;
+    border: 1px solid $primary-default;
+    color: $primary-default;
+  }
+}

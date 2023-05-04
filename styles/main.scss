@@ -1,0 +1,67 @@
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "abstracts/media";
+@import "abstracts/animations";
+@import "abstracts/abstracts";
+
+@import "base/base";
+@import "base/typography";
+
+@import "components/components";
+@import "components/button";
+@import "components/link";
+@import "components/slider";
+
+@import "layout/layout";
+@import "layout/discover-section";
+@import "layout/footer-section";
+@import "layout/header-section";
+@import "layout/prefooter-section";
+@import "layout/modals";
+@import "layout/forms";
+
+@import "pages/pages";
+@import "pages/home";
+
+@import "themes/themes";
+@import "themes/dark";
+@import "themes/admin";
+// #cursor {
+//   width: 15px; just messing around with cursor
+//   height: 15px;
+//   background-color: $primary-default;
+//   border-radius: 50%;
+//   position: absolute;
+//   top: -200%;
+//   left: -200%;
+//   transform: translate(-50%, -50%);
+//   z-index: 200;
+//   &:after {
+//     content: "";
+//     position: absolute;
+//     width: 2px;
+//     height: 2px;
+//     border-radius: 50%;
+//     transform: translate(-50%, -50%);
+//     left: 50%;
+//     top: 50%;
+//     background-color: transparent;
+//   }
+//   &.active {
+//     transform: translate(-50%, -50%) scale(1.5);
+//     &:after {
+//       transform: translate(-50%, -50%) scale(5);
+//       background-color: white;
+//     }
+//   }
+// }
+// * {
+//   cursor: none !important;
+// }
+.browser-upgrade {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  z-index: 1000;
+}

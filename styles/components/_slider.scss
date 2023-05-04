@@ -1,0 +1,31 @@
+// _slider.scss
+
+._slider {
+  //   display: flex; // not browser compatible - needs flexbox fallback ysing float?
+  //   align-items: center;
+  width: 100%;
+  margin: auto;
+  overflow: hidden; //- section has to have hidden overflow?? case dependent
+  ._slider-slides {
+    display: flex;
+    align-items: center;
+    // justify-content: space-between;
+    // height: 100%;
+    ._slider-slide {
+      position: relative;
+      .slide__content {
+        // top: 50%;
+        // left: 50%;
+        // transform: translate(-50%, -50%);
+        // position: relative;
+        .slide__icon {
+          //   display: flex;
+          //   justify-content: center;
+          &-img {
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+}

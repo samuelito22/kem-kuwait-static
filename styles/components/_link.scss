@@ -1,0 +1,19 @@
+// _link.scss
+
+.link {
+  font-weight: 400;
+  &__black {
+    color: $black;
+  }
+  &__white {
+    color: $white;
+  }
+  &.active {
+    font-weight: 500;
+    color: $primary-default;
+  }
+  &.lg {
+    font-size: 20px;
+    line-height: 140%;
+  }
+}

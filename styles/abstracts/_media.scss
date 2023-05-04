@@ -1,0 +1,89 @@
+// _media.scss
+
+/*  generic media queries */
+
+@media only screen and (min-width: 321px) {
+}
+
+@media only screen and (min-width: 481px) {
+}
+
+@media only screen and (min-width: 769px) {
+}
+
+@media only screen and (min-width: 993px) {
+}
+
+@media only screen and (min-width: 1201px) {
+}
+
+@media only screen and (min-width: 1401px) {
+  :root {
+    --max-content-container: 1280px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  :root {
+    --max-content-container: min(1280px, calc(100% - 40px)) !important;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  :root {
+    --max-content-container: calc(100% - 36px) !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  :root {
+    --max-content-container: calc(100% - 32px) !important;
+  }
+  //   ._section-divider {
+  //     display: none;
+  //   }
+}
+
+@media screen and (max-width: 768px) {
+  //   ._section__heading {
+  //   }
+}
+
+@media screen and (max-width: 480px) {
+}
+
+@media only screen and (orientation: landscape) {
+}
+
+@media only screen and (prefers-reduced-motion: reduce) {
+  * {
+    /* Very short durations means JavaScript that relies on events still works */
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+@media (hover: hover) {
+}
+
+@media (pointer: coarse) {
+  input[type="checkbox"] {
+    height: 2em;
+    width: 2em;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  /* :root {
+      --bg-color: black;
+      --text-color: white;
+    } */
+}
+
+@media only screen and (max-width: 320px) {
+  html,
+  body {
+    overflow-x: auto !important;
+  }
+}
